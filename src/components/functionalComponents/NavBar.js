@@ -1,8 +1,10 @@
 import logo from "../../img/logo.png";
+import style from "./style.css"
+
 
 const NavBar = () =>{
     return (
-<div style={{width: "100%", height:"80px", backgroundColor:"blue"}}>
+<div className= "NavBar-container">
     <div>
     <img src={logo} height="80px"></img>
     </div>
@@ -11,9 +13,9 @@ const NavBar = () =>{
     </div> 
     <div>
         <ul>
-            <li><a>Productos</a></li>
-            <li><a>Sucursales</a></li>
-            <li><a>Conctacto</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="#">Conctacto</a></li>
         </ul>
     </div>
 </div>
