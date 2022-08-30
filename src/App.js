@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from "./components/functionalComponents/NavBar";
- 
+import ItemListContainer from "./../src/components/functionalComponents/ItemListContainer";
 
 function App() {
   return (
     <div className="App">
-    <NavBar/>
+    <NavBar/> 
+    
+    <ItemListContainer nombre="Accesorios" url={"/"}/>
+    <ItemListContainer nombre="Mujer" url={"/"}/>
+    <ItemListContainer nombre="Hombre" url={"/"}/>
+ 
+
+    
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
 
@@ -24,3 +30,4 @@ function App() {
 }
 
 export default App;
+

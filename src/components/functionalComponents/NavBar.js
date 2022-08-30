@@ -1,5 +1,6 @@
 import logo from "../../img/logo.png";
-import style from "./style.css"
+import style from "./style.css";
+import CartWidgest from "./CartWidgest";
 
 
 const NavBar = () =>{
@@ -8,14 +9,15 @@ const NavBar = () =>{
     <div>
     <img src={logo} height="80px"></img>
     </div>
+    <CartWidgest/>
     <div>
     <h1> Envíos Grátis a Mendoza</h1>
     </div> 
     <div>
-        <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Conctacto</a></li>
+        <ul>    
+           <li>Productos</li>
+           <li>Conctacto</li>
+           <li>Nosotros</li>
         </ul>
     </div>
 </div>
@@ -24,3 +26,4 @@ const NavBar = () =>{
 }
 
 export default NavBar;
+
