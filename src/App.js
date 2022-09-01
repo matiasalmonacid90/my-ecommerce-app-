@@ -1,18 +1,23 @@
 import './App.css';
 import NavBar from "./components/functionalComponents/NavBar";
 import ItemListContainer from "./../src/components/functionalComponents/ItemListContainer";
+import ItemCount from './components/functionalComponents/ItemCount';
 
 function App() {
   return (
     <div className="App">
-    <NavBar/> 
-    
-    <ItemListContainer nombre="Accesorios" url={"/"}/>
-    <ItemListContainer nombre="Mujer" url={"/"}/>
-    <ItemListContainer nombre="Hombre" url={"/"}/>
- 
+      <NavBar />
 
-    
+      <ItemListContainer nombre="Accesorios" url={"/"} />
+      <ItemListContainer nombre="Mujer" url={"/"} />
+      <ItemListContainer nombre="Hombre" url={"/"} />
+      <ItemCount stock="10" incio="15">
+        <div>
+          <h1>Hola mundo</h1>
+        </div>
+      </ItemCount>
+
+
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
 
