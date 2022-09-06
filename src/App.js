@@ -11,15 +11,12 @@ function App() {
       <ItemListContainer nombre="Accesorios" url={"/"} />
       <ItemListContainer nombre="Mujer" url={"/"} />
       <ItemListContainer nombre="Hombre" url={"/"} />
-      <ItemCount stock="10" incio="15">
-        <div>
-          <h1>Hola mundo</h1>
-        </div>
-      </ItemCount>
+      <ItemCount stock="15" initial="0" />
 
 
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
+
 
         <a
           className="App-link"
