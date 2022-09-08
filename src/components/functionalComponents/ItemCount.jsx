@@ -3,21 +3,23 @@ import { useState, useEffect } from "react";
 import style from "./style.css";
 
 
-const ItemCount = (stock, initial) => {
- 
+const ItemCount = ({ stock, initial, onAdd }) => {
 
-    const [cont, setContador] = useState(0);
-    
+
+    const [cont, setContador] = useState(initial);
+
     const updateNum = () => {
-       
-        setContador(cont + 1);
+        if (stock > cont) {
+            setContador(cont + 1);
+        }
     }
 
     const downNum = () => {
-
-        setContador(cont - 1);
-
+        if (cont > initial) {
+            setContador(cont - 1);
+        }
     }
+
 
     return (
         <>
@@ -25,6 +27,7 @@ const ItemCount = (stock, initial) => {
                 <h2>{cont}</h2>
                 <button onClick={updateNum}>Agregar artículos</button>
                 <button onClick={downNum}>Quitar artículos</button>
+                <button onClick={onAdd}>Agregar al carrito</button>
 
             </div>
         </>

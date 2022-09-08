@@ -3,7 +3,10 @@ import NavBar from "./components/functionalComponents/NavBar";
 import ItemListContainer from "./../src/components/functionalComponents/ItemListContainer";
 import ItemCount from './components/functionalComponents/ItemCount';
 
+
+
 function App() {
+
   return (
     <div className="App">
       <NavBar />
@@ -11,8 +14,11 @@ function App() {
       <ItemListContainer nombre="Accesorios" url={"/"} />
       <ItemListContainer nombre="Mujer" url={"/"} />
       <ItemListContainer nombre="Hombre" url={"/"} />
-      <ItemCount stock="15" initial="0" />
-
+      <ItemCount stock={15} initial={1} /*onAdd={onAdd} *//> 
+    
+      const onAdd = ({cont}) => {
+        console.log(cont)
+      }
 
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
