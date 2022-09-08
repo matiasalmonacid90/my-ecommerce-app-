@@ -14,11 +14,9 @@ function App() {
       <ItemListContainer nombre="Accesorios" url={"/"} />
       <ItemListContainer nombre="Mujer" url={"/"} />
       <ItemListContainer nombre="Hombre" url={"/"} />
-      <ItemCount stock={15} initial={1} /*onAdd={onAdd} *//> 
+      <ItemCount stock={15} initial={1} onAdd /> 
     
-      const onAdd = ({cont}) => {
-        console.log(cont)
-      }
+
 
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
