@@ -6,7 +6,9 @@ import ItemCount from './components/functionalComponents/ItemCount';
 
 
 function App() {
-
+  function onAdd(count) {
+    console.log(count)
+  }
   return (
     <div className="App">
       <NavBar />
@@ -14,9 +16,9 @@ function App() {
       <ItemListContainer nombre="Accesorios" url={"/"} />
       <ItemListContainer nombre="Mujer" url={"/"} />
       <ItemListContainer nombre="Hombre" url={"/"} />
-      <ItemCount stock={15} initial={1} onAdd /> 
+      <ItemCount stock={15} initial={1} onAdd={onAdd} /> 
     
-
+    
 
       <header className="App-header">
         <h1>E-commerce Sochi</h1>

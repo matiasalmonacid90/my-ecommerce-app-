@@ -1,5 +1,5 @@
 
-const ItemListContainer = ({ nombre, url }) => {
+const ItemListContainer = ({ nombre, url}) => {
    
     return (
         <li> <a href={url}>{nombre}</a></li>
