@@ -2,8 +2,8 @@
 const Item = ({id, name, description, price, image}) => {
     return(
         <div>
-            <img src={image} alt={name} />
-            <h1>{name}</h1>
+            <img src={image} />
+            <h4>{name}</h4>
             <p>{description}</p>
             <p>{price}</p>
         </div>

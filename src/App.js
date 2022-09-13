@@ -11,14 +11,11 @@ function App() {
   }
   return (
     <div className="App">
-      <NavBar />
-
-      <ItemListContainer nombre="Accesorios" url={"/"} />
-      <ItemListContainer nombre="Mujer" url={"/"} />
-      <ItemListContainer nombre="Hombre" url={"/"} />
+      <NavBar/>
+      <ItemListContainer/>
       <ItemCount stock={15} initial={1} onAdd={onAdd} /> 
     
-    
+
 
       <header className="App-header">
         <h1>E-commerce Sochi</h1>
