@@ -1,6 +1,6 @@
-import logo from "../../img/logo.png";
-import style from "./style.css";
-import CartWidgest from "./CartWidgest";
+import logo from "./../img/logo.png";
+import style from "./../style.css";
+import CartWidgest from "../CartWidwest/CartWidgest";
 
 
 const NavBar = () =>{

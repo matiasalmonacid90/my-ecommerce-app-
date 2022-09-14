@@ -1,4 +1,4 @@
-import data from "./mock-data";
+import data from "./../Item/mock-data";
 import { useEffect, useState } from "react";
 import ItemList from "./itemList";
 

@@ -1,10 +1,14 @@
-const data = [
+import Manc1 from "./../img/Manc1.webp"
+import Manc2 from "./../img/Manc2.webp"
+import Manc3 from "./../img/Manc3.jpg"
+
+const data= [
     {
         id: 1,
         name: 'Mancuerna 1',
         description: 'Remera de tipo 1',
         price: '$5000',
-        image: 'https://www.instagram.com/p/CY18wqDJRuI/',
+        image: Manc1,
         stock: 10,
     },
     {
@@ -12,7 +16,7 @@ const data = [
         name: 'Mancuerna 2',
         description: 'Remera de tipo 2',
         price: '$2000',
-        image: 'https://www.instagram.com/p/CBBXXbApuXG/',
+        image: Manc2,
         stock: 20,
     },
     {
@@ -21,7 +25,7 @@ const data = [
         name: 'Mancuerna 3',
         description: 'Remera de tipo 3',
         price: '$1000',
-        image: 'https://www.instagram.com/p/CBBXXbApuXG/',
+        image: Manc3,
         stock: 50,
     },
 ];
